@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp-like Chat UI</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .chat-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto; /* Enable scrolling if content overflows */
+        max-height: 400px; /* Limit the height to create a scrollable area */
+    }
+
+    .messages {
+        margin-bottom: 20px;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        background-color: #dcf8c6;
+        color: #000;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        max-width: 70%;
+        word-wrap: break-word;
+    }
+
+    .message.sent {
+        background-color: #e2e2e2;
+        align-self: flex-end;
+    }
+
+    .message.received {
+        background-color: #dcf8c6;
+        align-self: flex-start;
+    }
+
+    .message-body {
+        margin-bottom: 5px;
+    }
+
+    .message-time {
+        align-self: flex-end;
+        font-size: 12px;
+        color: #777;
+    }
+
+    .message-input-container {
+        display: flex;
+    }
+
+    .message-input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .send-button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .send-button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="messages">
+        <div class="message received">
+            <div class="message-body">Hello, how are you doing?</div>
+            <div class="message-time">10:00 AM</div>
+        </div>
+        <div class="message sent">
+            <div class="message-body">I'm good, thanks! How about you?</div>
+            <div class="message-time">10:05 AM</div>
+        </div>
+        <div class="message received">
+            <div class="message-body">I'm great, thanks for asking! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ligula fermentum, dignissim dolor sit amet, condimentum justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc sit amet enim at magna faucibus convallis vel ut neque. Nam at augue sit amet nunc mattis ullamcorper. In hac habitasse platea dictumst.</div>
+            <div class="message-time">10:10 AM</div>
+        </div>
+        <div class="message sent">
+            <div class="message-body">That's great! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ligula fermentum, dignissim dolor sit amet, condimentum justo.</div>
+            <div class="message-time">10:15 AM</div>
+        </div>
+        <div class="message received">
+            <div class="message-body">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc sit amet enim at magna faucibus convallis vel ut neque. Nam at augue sit amet nunc mattis ullamcorper. In hac habitasse platea dictumst.</div>
+            <div class="message-time">10:20 AM</div>
+        </div>
+    </div>
+    <div class="message-input-container">
+        <textarea class="message-input" placeholder="Type your message..."></textarea>
+        <button class="send-button">Send</button>
+    </div>
+</div>
+
+</body>
+</html>
+--------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fault Description</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .fault-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    .fault-table th, .fault-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .fault-table th {
+        background-color: #f9f9f9;
+    }
+
+    .fault-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <table class="fault-table">
+        <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Fault ID</td>
+            <td>#12345</td>
+        </tr>
+        <tr>
+            <td>Date Reported</td>
+            <td>May 8, 2024</td>
+        </tr>
+        <tr>
+            <td>Reporter</td>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <td>Priority</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>In Progress</td>
+        </tr>
+    </table>
+    <div class="fault-description">
+        <h2>Description</h2>
+        <p>This is the content for the fault description. It may include details about the issue encountered, its impact, and any relevant information.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere velit at arcu eleifend bibendum. Suspendisse sit amet lorem ipsum. Nam ut arcu ac nulla placerat convallis.</p>
+        <p>Maecenas auctor arcu ut felis dictum consequat. Nullam et dui vitae mauris aliquet molestie. Nullam vel mi commodo, fringilla magna id, feugiat odio. Nam ullamcorper urna at eros vehicula tristique.</p>
+    </div>
+</div>
+
+</body>
+</html>
